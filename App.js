@@ -1,20 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
+import Try from "./home/Try";
+import Placeholder from "./home/Pleaceholder";
+import { View, text } from "react-native";
+import { StatusBar,StyleSheet } from "react-native";
+import Button from "./home/Button";
+import ImageViewer from "./home/Imageviewer";
+import CircleButton from "./home/Circlebutton";
+import IconButton from "./home/Iconbutton";
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <Try />
+      <Placeholder />
+      <StatusBar />
+      <Button label="Choose a photo" />
+      <Button label="Use this photo" />
+     
+      <CircleButton/>
+      <IconButton/>
+    </>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
